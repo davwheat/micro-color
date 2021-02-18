@@ -21,7 +21,7 @@
     "build:es": "cross-env babel src --out-dir es --ignore \"src/__tests__\"",
     "build:lib": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --ignore \"src/__tests__\"",
     "release": "yarn clean && yarn test && yarn build && yarn publish",
-    "test": "cross-env BABEL_ENV=commonjs jest --runInBand",
+    "test": "cross-env BABEL_ENV=commonjs jest",
     "coverage": "yarn test --coverage"
   },
   "repository": "https://github.com/davwheat/micro-color.git",

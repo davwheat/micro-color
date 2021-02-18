@@ -1,13 +1,13 @@
+import hexToHsla from './utils/hexToHsla'
 import rgbToHsl from './utils/rgbToHsl'
 import roundTo4Dp from './utils/roundTo4Dp'
 
 const RE = /(rgba?|hsla?)\((.*)\)/i
 
 export default function parse(color) {
-  const match = color
-    .trim()
-    .replace(/\s*/gi, '')
-    .match(RE)
+  if (color.startsWith('#')) return hexToHsla(color)
+
+  const match = color.trim().replace(/\s*/gi, '').match(RE)
 
   if (match === null) {
     return false

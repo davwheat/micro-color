@@ -17,11 +17,10 @@ npm i micro-color
 
 ## Limitations
 
-1. It only supports valid CSS color strings to be passed in
-2. It only supports `rgb/a`, `hsl/a` and hex color values
-3. It does not optimize output values (e.g. round decimals to X digits)
-4. It does not validate input values
-5. It always returns `hsla` or `rgba` (even if alpha=1)
+1. Only valid CSS color strings can be used as inputs (rgb, rgba, hsl, hsla, hex)
+2. Output values are rounded to 2 or 4 decimal places (depending on the property)
+3. Only outputs RGBA or HSLA values (alpha is always provided, even if 1)
+4. Inputs are not validated (but adjustments are clamped to the valid values)
 
 ## Usage
 

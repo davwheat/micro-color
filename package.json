@@ -1,7 +1,7 @@
 {
   "name": "micro-color",
   "description": "A tiny (3.2 kB), limited & tree-shakeable color manipulation library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [

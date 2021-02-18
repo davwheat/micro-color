@@ -1,4 +1,5 @@
 import rgbToHsl from './utils/rgbToHsl'
+import roundTo4Dp from './utils/roundTo4Dp'
 
 const RE = /(rgba?|hsla?)\((.*)\)/i
 
@@ -30,7 +31,7 @@ export default function parse(color) {
   }
 
   return {
-    h: x,
+    h: roundTo4Dp(x / 360),
     s: y / 100,
     l: z / 100,
     a,

@@ -1,3 +1,5 @@
+import roundTo4Dp from './roundTo4Dp'
+
 export default function rgbToHsl(r, g, b) {
   ;(r /= 255), (g /= 255), (b /= 255)
 
@@ -28,5 +30,5 @@ export default function rgbToHsl(r, g, b) {
     h /= 6
   }
 
-  return [h, s, l]
+  return [h, s, l].map(roundTo4Dp)
 }

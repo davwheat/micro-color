@@ -1,6 +1,6 @@
 # `micro-color`
 
-A tiny (3.2 kB), limited & tree-shakable alternative to [color](https://github.com/Qix-/color).
+A tiny (3.2 kB), limited & tree-shakable alternative to [`color`](https://github.com/Qix-/color). Based off of Robin Weser's [`small-color`](https://github.com/robinweser/small-color) package.
 
 It is very limited and optimized for runtime usage in the browser.
 
@@ -71,16 +71,67 @@ parse("#fff80") // => { h: 0, s: 0, l: 1, a: 0.5 }
 
 ### `lighten(Color, float): Color`
 
-Lightens a Color object by a given factor. Supplied lighten factor should be provided as a number between 0 and 1, where 0 is no increase and 1 is a 100% increase (double).
+Lightens a Color object by a given factor.
 
-- `darken(Color, float): Color`
-- `saturate(Color, float): Color`
-- `desaturate(Color, float): Color`
-- `fade(Color, float): Color`
-- `opaquer(Color, float): Color`
-- `grayscale(Color): Color`
-- `toRgb(Color): string`
-- `toHsl(Color): string`
+Supplied lighten factor should be provided as a number >= 0, where 0 is no increase and 1 is a 100% increase (double).
+
+The lightness will not exceed 100%, or subceed 0%.
+
+### `darken(Color, float): Color`
+
+Darkens a Color object by a given factor.
+
+Supplied darken factor should be provided as a number between 0 and 1, where 0 is no decrease and 1 is a 100% decrease (black).
+
+The lightness will not exceed 100%, or subceed 0%.
+
+### `saturate(Color, float): Color`
+
+Increases saturation of a Color object by a given factor.
+
+Supplied saturation factor should be provided as a number >= 0, where 0 is no increase in saturation and 1 is a 100% increase in saturation (doubled saturation).
+
+The saturation will not exceed 100%, or subceed 0%.
+
+### `desaturate(Color, float): Color`
+
+Desaturates a Color object by a given factor.
+
+Supplied desaturation factor should be provided as a number between 0 and 1, where 0 is no decrease in saturation and 1 is a 100% decrease in saturation.
+
+The saturation will not exceed 100%, or subceed 0%.
+
+### `fade(Color, float): Color`
+
+Increases the opacity of a Color object by a given factor.
+
+Supplied factor should be between 1 and 0, where 1 makes the color fully transparent, and 0 creates 0 change in opacity.
+
+The alpha value will not exceed 1, or subceed 0.
+
+### `opaquer(Color, float): Color`
+
+Decreases the opacity of a Color object by a given factor.
+
+Supplied factor should be between 0 and 1, where 1 doubles the alpha value (2x more opaque), and 0 means no change in transparency.
+
+The alpha value will not exceed 1, or subceed 0.
+
+### `grayscale(Color): Color`
+
+Converts a Color object to grayscale. (Removes all saturation.)
+
+### `toRgb(Color): string`
+
+Converts a Color object to a CSS-interpretable RGBA string, e.g. `rgba(128, 128, 128, 0.75)`.
+
+Note that the alpha is always included, even if it's 1.
+
+### `toHsl(Color): string`
+
+Converts a Color object to a CSS-interpretable HSLA string, e.g. `hsla(325, 75%, 66%, 0.75)`.
+
+Note that the alpha is always included, even if it's 1.
 
 ## License
 

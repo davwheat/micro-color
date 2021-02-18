@@ -1,4 +1,4 @@
-# `mini-color`
+# `micro-color`
 
 A tiny (3.2 kB), limited & tree-shakable alternative to [color](https://github.com/Qix-/color).
 
@@ -11,8 +11,8 @@ It has **zero dependencies** and **supports tree-shaking**, making its size even
 ## Installation
 
 ```sh
-yarn add mini-color
-npm i mini-color
+yarn add micro-color
+npm i micro-color
 ```
 
 ## Limitations
@@ -84,7 +84,7 @@ Lightens a Color object by a given factor. Supplied lighten factor should be pro
 
 ## License
 
-mini-color is licensed under the [MIT License](http://opensource.org/licenses/MIT).
+micro-color is licensed under the [MIT License](http://opensource.org/licenses/MIT).
 
 Documentation is licensed under [Creative Common License](http://creativecommons.org/licenses/by/4.0/).
 

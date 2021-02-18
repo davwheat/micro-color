@@ -1,5 +1,5 @@
 {
-  "name": "mini-color",
+  "name": "micro-color",
   "description": "A tiny (3.2 kB), limited & tree-shakeable color manipulation library",
   "version": "1.0.0",
   "main": "lib/index.js",
@@ -24,7 +24,7 @@
     "test": "cross-env BABEL_ENV=commonjs jest --runInBand",
     "coverage": "yarn test --coverage"
   },
-  "repository": "https://github.com/davwheat/mini-color.git",
+  "repository": "https://github.com/davwheat/micro-color.git",
   "author": "David Wheatley <hi@davwheat.dev> (https://davwheat.dev/)",
   "license": "MIT",
   "devDependencies": {

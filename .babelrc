@@ -5,6 +5,12 @@
       {
         "modules": false
       }
+    ],
+    [
+      "minify",
+      {
+        "builtIns": false
+      }
     ]
   ],
   "env": {

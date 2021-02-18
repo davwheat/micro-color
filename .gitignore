@@ -21,6 +21,8 @@ Thumbs.db
 *.sw?
 *.vi
 
+.vscode
+
 node_modules
 lib
 es 

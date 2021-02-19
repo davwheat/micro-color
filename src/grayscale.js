@@ -1,5 +1,3 @@
 import desaturate from './desaturate'
 
-export default function greyscale(color) {
-  return desaturate(color, 1)
-}
+export default (color) => desaturate(color, 1)

@@ -1,3 +1,1 @@
-export default function clamp(val, min = 0, max = 1) {
-  return Math.max(min, Math.min(val, max))
-}
+export default (val, min, max) => Math.max(min || 0, Math.min(val, max || 1))

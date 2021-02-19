@@ -1,3 +1,1 @@
-export default function assignImmutable(base, extend) {
-  return Object.assign({}, base, extend)
-}
+export default (base, extend) => Object.assign({}, base, extend)

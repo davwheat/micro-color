@@ -4,7 +4,7 @@ import roundTo4Dp from './utils/roundTo4Dp'
 
 const RE = /(rgba?|hsla?)\((.*)\)/i
 
-export default function parse(color) {
+export default (color) => {
   if (color.startsWith('#')) return hexToHsla(color)
 
   const match = color.trim().replace(/\s*/gi, '').match(RE)

@@ -1,6 +1,6 @@
 # `micro-color`
 
-A tiny (3.2 kB), limited & tree-shakable alternative to [`color`](https://github.com/Qix-/color). Based off of Robin Weser's [`small-color`](https://github.com/robinweser/small-color) package.
+A tiny (3.5 kB), limited & tree-shakable alternative to [`color`](https://github.com/Qix-/color). Based off of Robin Weser's [`small-color`](https://github.com/robinweser/small-color) package.
 
 It is very limited and optimized for runtime usage in the browser.
 
@@ -119,6 +119,12 @@ The alpha value will not exceed 1, or subceed 0.
 ### `grayscale(Color): Color`
 
 Converts a Color object to grayscale. (Removes all saturation.)
+
+### `hueShift(Color, int): Color`
+
+Performs a hue shift with the supplied input. Positive for a right shift, negative for a left shift. Input should be an integer between -359 and 359 (but could be any number).
+
+Wrapping (e.g. -180 shift on 90 becomes 270) is performed automatically.
 
 ### `toRgb(Color): string`
 

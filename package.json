@@ -18,7 +18,7 @@
   "bundlesize": [
     {
       "path": "./es/**/*.js",
-      "maxSize": "250 B"
+      "maxSize": "300 B"
     }
   ],
   "scripts": {

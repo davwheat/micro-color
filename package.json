@@ -1,6 +1,6 @@
 {
   "name": "micro-color",
-  "description": "A tiny (3.5 kB), limited & tree-shakeable color manipulation library",
+  "description": "A tiny (1 kB gzipped), limited & tree-shakeable color manipulation library",
   "version": "1.1.0",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -15,6 +15,12 @@
   "jest": {
     "testEnvironment": "node"
   },
+  "bundlesize": [
+    {
+      "path": "./es/**/*.js",
+      "maxSize": "250 B"
+    }
+  ],
   "scripts": {
     "clean": "cross-env rimraf lib es coverage",
     "build": "yarn build:es && yarn build:lib",
@@ -24,7 +30,8 @@
     "release": "yarn publish",
     "test": "cross-env BABEL_ENV=commonjs jest",
     "coverage": "yarn test --coverage",
-    "format": "prettier --write \"**/*.{js,json,md}\""
+    "format": "cross-env prettier --write \"**/*.{js,json,md}\"",
+    "size": "cross-env bundlesize"
   },
   "repository": "https://github.com/davwheat/micro-color.git",
   "author": "David Wheatley <hi@davwheat.dev> (https://davwheat.dev/)",
@@ -38,6 +45,7 @@
     "babel-jest": "^26.6.3",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-preset-minify": "^0.5.1",
+    "bundlesize": "^0.18.1",
     "cross-env": "^7.0.3",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",

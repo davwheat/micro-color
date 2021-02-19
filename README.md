@@ -1,6 +1,14 @@
 # `micro-color`
 
-A tiny (3.5 kB), limited & tree-shakable alternative to [`color`](https://github.com/Qix-/color). Based off of Robin Weser's [`small-color`](https://github.com/robinweser/small-color) package.
+|     Type     |                             Info                              |
+| :----------: | :-----------------------------------------------------------: |
+|   Gzipped    |    ![](https://badgen.net/bundlephobia/minzip/micro-color)    |
+|   Minified   |     ![](https://badgen.net/bundlephobia/min/micro-color)      |
+| Tree-shaking | ![](https://badgen.net/bundlephobia/tree-shaking/micro-color) |
+
+<sup>[Data from Bundlephobia](https://bundlephobia.com/result?p=micro-color)</sup>
+
+A tiny, limited and tree-shakable alternative to [`color`](https://github.com/Qix-/color). Based off of Robin Weser's [`small-color`](https://github.com/robinweser/small-color) package.
 
 It is very limited and optimized for runtime usage in the browser.
 

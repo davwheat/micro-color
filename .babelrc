@@ -9,7 +9,10 @@
     [
       "minify",
       {
-        "builtIns": false
+        "builtIns": false,
+        "mangle": {
+          "topLevel": true
+        }
       }
     ]
   ],
@@ -17,5 +20,6 @@
     "commonjs": {
       "plugins": ["transform-es2015-modules-commonjs"]
     }
-  }
+  },
+  "comments": false
 }

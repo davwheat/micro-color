@@ -9,15 +9,4 @@ import saturate from './saturate'
 import toHsl from './toHsl'
 import toRgb from './toRgb'
 
-export {
-  darken,
-  desaturate,
-  fade,
-  grayscale,
-  lighten,
-  opaquer,
-  parse,
-  saturate,
-  toHsl,
-  toRgb,
-}
+export { darken, desaturate, fade, grayscale, lighten, opaquer, parse, saturate, toHsl, toRgb }

@@ -62,10 +62,10 @@ Accepts any "normal" CSS color string:
 #### Example
 
 ```js
-parse("hsl(180, 50%, 75%)") // => { h: 0.5, s: 0.5, l: 0.75, a: 1 }
-parse("rgb(128, 128, 128, 0.675)") // => { h: 0, s: 0, l: 0.5, a: 0.675 }
-parse("#ffffff") // => { h: 0, s: 0, l: 1, a: 1 }
-parse("#fff80") // => { h: 0, s: 0, l: 1, a: 0.5 }
+parse('hsl(180, 50%, 75%)') // => { h: 0.5, s: 0.5, l: 0.75, a: 1 }
+parse('rgb(128, 128, 128, 0.675)') // => { h: 0, s: 0, l: 0.5, a: 0.675 }
+parse('#ffffff') // => { h: 0, s: 0, l: 1, a: 1 }
+parse('#fff80') // => { h: 0, s: 0, l: 1, a: 0.5 }
 ```
 
 ### `lighten(Color, float): Color`

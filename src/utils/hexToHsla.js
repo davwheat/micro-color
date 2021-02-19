@@ -4,9 +4,7 @@ import roundTo4Dp from './roundTo4Dp'
 export default function hexToHsla(hex) {
   let isShortHex = hex.length < 6
 
-  let vals = isShortHex
-    ? hex.substr(1).match(/.{1}/g)
-    : hex.substr(1).match(/.{2}/g)
+  let vals = isShortHex ? hex.substr(1).match(/.{1}/g) : hex.substr(1).match(/.{2}/g)
 
   // #fab -> #ffaabb
   isShortHex && (vals = vals.map((x) => x + x))

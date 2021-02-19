@@ -1,7 +1,7 @@
 import rgbToHsl from './rgbToHsl'
 import roundTo4Dp from './roundTo4Dp'
 
-export default function hexToHsla(hex) {
+export default (hex) => {
   let isShortHex = hex.length < 6
 
   let vals = isShortHex ? hex.substr(1).match(/.{1}/g) : hex.substr(1).match(/.{2}/g)

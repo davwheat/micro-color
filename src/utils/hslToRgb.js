@@ -1,12 +1,14 @@
-export default function hslToRgb(h, s, l) {
-  var r, g, b
+export default (h, s, l) => {
+  let r
+  let g
+  let b
 
-  if (s == 0) {
-    r = g = b = l // achromatic
-  } else {
+  r = g = b = l
+
+  if (s) {
     function hue2rgb(p, q, t) {
-      if (t < 0) t += 1
-      if (t > 1) t -= 1
+      if (t < 0) t++
+      if (t > 1) t--
       if (t < 1 / 6) return p + (q - p) * 6 * t
       if (t < 1 / 2) return q
       if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6

@@ -8,6 +8,8 @@
 
 <sup>[Data from Bundlephobia](https://bundlephobia.com/result?p=micro-color)</sup>
 
+# Info
+
 A tiny, limited and tree-shakable alternative to [`color`](https://github.com/Qix-/color). Based off of Robin Weser's [`small-color`](https://github.com/robinweser/small-color) package.
 
 It is very limited and optimized for runtime usage in the browser.
